@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TITRE DU SITE</title>
+    <title>VICTOR MICHAUD | PORTFOLIO</title>
 
     <link rel="stylesheet" href="styles/main.css" />
 
@@ -16,45 +16,37 @@
 </head>
 
 <body>
-    <header>
+    <header class="header" data-component="Header" data-treshold="0.2">
         <div class="wrapper">
             <a href="index.html" class="logo">
-                <h1>VICTOR</h1>
-                <h1>MICHAUD</h1>
+                <img src="../assets/images/logo_portfolio.png" alt="">
             </a>
             <div class="nav-header">
                 <nav class="social">
                     <ul>
                         <li>
-                            <a href="">
-                                <svg class="icon">
-                                    <use href="#icon-ig"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
+                            <a href="https://pin.it/2HWexql4p" target="_blank">
                                 <svg class="icon">
                                     <use href="#icon-pinterest"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.linkedin.com/in/victor-michaud-154959441/" target="_blank">
                                 <svg class="icon">
                                     <use href="#icon-linkedin"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.behance.net/victormichaud" target="_blank">
                                 <svg class="icon">
                                     <use href="#icon-behance"></use>
                                 </svg>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.youtube.com/@VVVictorMichaud" target="_blank">
                                 <svg class="icon">
                                     <use href="#icon-youtube"></use>
                                 </svg>
@@ -71,15 +63,19 @@
                     </ul>
                 </nav>
             </div>
+            <button class="header__toggle js-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-
     </header>
 
     <section class="projets">
         <div class="wrapper">
             <h1>MES PROJETS</h1>
             <div class="cards-projets">
-                <div class="card-projet">
+                <a href="https://www.behance.net/gallery/257009665/Refonte-du-UI-UX-de-la-Baie-Sainte-Catherine" class="card-projet" target="_blank">
                     <img src="assets/images/projet1.png" alt="">
                     <div class="cta-behance">
                         <p>VOIR LE PROJET SUR BEHANCE</p>
@@ -92,8 +88,8 @@
                         <h1>Refonte du UI & UX de la Baie Sainte-Catherine</h1>
                         <p class="smaller">Un site municipal avec une navigation modernisée et simple.</p>
                     </div>
-                </div>
-                <div class="card-projet">
+                </a>
+                <a href="https://www.behance.net/gallery/257429381/THEWORLDISDOOMED" target="_blank" class="card-projet">
                     <img src="assets/images/projet2.png" alt="">
                     <div class="cta-behance">
                         <p>VOIR LE PROJET SUR BEHANCE</p>
@@ -106,8 +102,8 @@
                         <h1>Design et montage photoshop d’une couverture</h1>
                         <p>Un visuel parodique du style ‘pen & pixel’ avec Dr Doom.</p>
                     </div>
-                </div>
-                <div class="card-projet">
+                </a>
+                <a href="https://www.behance.net/gallery/257429901/Modlisation-et-Animation-3D-dun-film-court" target="_blank" class="card-projet">
                     <img src="assets/images/projet3.png" alt="">
                     <div class="cta-behance">
                         <p>VOIR LE PROJET SUR BEHANCE</p>
@@ -120,8 +116,8 @@
                         <h1>Modélisation et animation 3D</h1>
                         <p>Un questionnement sur la réalité du personnage.</p>
                     </div>
-                </div>
-                <div class="card-projet">
+                </a>
+                <a href="" target="_blank" class="card-projet">
                     <img src="assets/images/projet4.png" alt="">
                     <div class="cta-behance">
                         <p>VOIR LE PROJET SUR BEHANCE</p>
@@ -134,9 +130,9 @@
                         <h1>Création de visuel sur Touch Designer</h1>
                         <p class="smaller">Un visuel style camera de sécurité avec de la distortion.</p>
                     </div>
-                </div>
-                <div class="card-projet">
-                    <img src="assets/images/projet5.png" alt="">
+                </a>
+                <a href="https://www.behance.net/gallery/257430217/Ma-contribution-au-WEBJAM-2026" target="_blank" class="card-projet">
+                    <img src="assets/images/cover.png" alt="">
                     <div class="cta-behance">
                         <p>VOIR LE PROJET SUR BEHANCE</p>
                         <svg class="icon icon--stroke">
@@ -144,29 +140,67 @@
                         </svg>
                     </div>
                     <div class="projet-content">
-                        <p class="smaller">COUVERTURE DE PLAYLISTE | PROJET PERSONNEL | 2025</p>
-                        <h1>Design et montage photoshop d’une couverture</h1>
-                        <p>Un visuel sombre et simple d’une playliste du même style.</p>
+                        <p class="smaller">DESIGN WEBJAM | PROJET D'ÉQUIPE | 2026</p>
+                        <h1>Ma contribution au design de notre projet au WEBJAM</h1>
+                        <p>Créer un site basé sur une invention qui pourrait changer le monde.</p>
                     </div>
-                </div>
-                <div class="card-projet">
-                    <img src="assets/images/Passion_artvisuel.jpg" alt="">
-                    <div class="cta-behance">
-                        <p>VOIR LE PROJET SUR BEHANCE</p>
-                        <svg class="icon icon--stroke">
-                            <use href="#icon-arrow"></use>
-                        </svg>
-                    </div>
-                    <div class="projet-content">
-                        <p>SITE PROMOTIONNEL | PROJET SCOLAIRE | 2025</p>
-                        <h1>Refonte du UI & UX de la Baie Sainte-Catherine</h1>
-                        <p>Un site municipal avec une navigation modernisée et simple.</p>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
 
+
+    <footer>
+        <div class="wrapper">
+            <a href="index.html" class="logo">
+                <img src="../assets/images/logo_portfolio.png" alt="">
+            </a>
+
+            <div>
+                <p>
+                    Aucune IA générative n’a été utilisée pour fabriquer ce coffre.
+                </p>
+                <p>
+                    Les usages éventuels propres aux projets sont indiqués dans leurs fiches.
+                </p>
+            </div>
+
+            <div class="nav-footer">
+                <nav class="social">
+                    <ul>
+                        <li>
+                            <a href="https://pin.it/2HWexql4p" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-pinterest"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/victor-michaud-154959441/" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.behance.net/victormichaud" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-behance"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/@VVVictorMichaud" target="_blank">
+                                <svg class="icon">
+                                    <use href="#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
