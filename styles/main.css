@@ -785,6 +785,77 @@ section {
   background-color: var(--color-white);
 }
 
+.has-js {
+  --transition-time: 0.5s;
+}
+.has-js [data-scrolly=fromLeft] {
+  opacity: 0;
+  transform: scaleX(0.5);
+  transition: all var(--transition-time) ease-out;
+  transform-origin: left;
+}
+.has-js [data-scrolly=fromLeft].is-active {
+  opacity: 1;
+  transform: scaleX(1);
+}
+.has-js [data-scrolly=fromRight] {
+  opacity: 0;
+  transform: scaleX(0.5);
+  transition: all var(--transition-time) ease-out;
+  transform-origin: right;
+}
+.has-js [data-scrolly=fromRight].is-active {
+  opacity: 1;
+  transform: scaleX(1);
+}
+.has-js [data-scrolly=skillTop] {
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all var(--transition-time) ease-out;
+}
+.has-js [data-scrolly=skillTop].is-active {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.has-js [data-scrolly=skillBottom] {
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: all var(--transition-time) ease-out;
+}
+.has-js [data-scrolly=skillBottom].is-active {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.has-js [data-scrolly=opacity] {
+  opacity: 0;
+  transition: all var(--transition-time) ease-out;
+}
+.has-js [data-scrolly=opacity].is-active {
+  opacity: 1;
+}
+.has-js [data-scrolly=projet] {
+  opacity: 0;
+  transform: scaleY(0.5);
+  transform-origin: top;
+  transition: all var(--transition-time) ease-out;
+}
+.has-js [data-scrolly=projet].is-active {
+  transform: scaleY(1);
+  opacity: 1;
+}
+.has-js [data-scrolly=video] {
+  opacity: 0.5;
+  transform: scale(0.9) translateY(-20px);
+  transform-origin: top;
+  transition: all var(--transition-time) ease-out;
+}
+.has-js [data-scrolly=video].is-active {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+
 .body_hub {
   background-color: var(--color-bg-secondary);
 }

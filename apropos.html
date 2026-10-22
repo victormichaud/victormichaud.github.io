@@ -15,7 +15,7 @@
     <script src="scripts/main.js" defer></script>
 </head>
 
-<body>
+<body data-component="Scrolly">
     <header class="header" data-component="Header" data-treshold="0.2">
         <div class="wrapper">
             <a href="index.html" class="logo">
@@ -73,10 +73,10 @@
 
     <section class="hero">
         <div class="wrapper">
-            <div class="photo-profile cadre-img-bleu">
+            <div class="photo-profile cadre-img-bleu" data-scrolly="fromLeft">
                 <img src="assets/images/Photo_profile_1.jpg" alt="">
             </div>
-            <div class="info-profile">
+            <div class="info-profile" data-scrolly="fromRight">
                 <h1>Victor Michaud</h1>
                 <h2>Designer Graphique</h2>
                 <h2>Créateur de Média</h2>
@@ -93,31 +93,31 @@
             <h1>MES COMPÉTENCES TECHNIQUES</h1>
             <span class="bar"></span>
             <div class="cards-skill">
-                <div class="card-skill">
+                <div class="card-skill" data-scrolly="skillBottom">
                     <svg class="icon">
                         <use href="#icon-montage-photo"></use>
                     </svg>
                     <p>TRAITEMENT D’IMAGE</p>
                 </div>
-                <div class="card-skill">
+                <div class="card-skill" data-scrolly="skillTop">
                     <svg class="icon">
                         <use href="#icon-illustration"></use>
                     </svg>
                     <p>ILLUSTRATION</p>
                 </div>
-                <div class="card-skill">
+                <div class="card-skill" data-scrolly="skillBottom">
                     <svg class="icon icon--stroke">
                         <use href="#icon-video"></use>
                     </svg>
                     <p>MONTAGE VIDÉO</p>
                 </div>
-                <div class="card-skill">
+                <div class="card-skill" data-scrolly="skillTop">
                     <svg class="icon">
                         <use href="#icon-scene-3d"></use>
                     </svg>
                     <p>CRÉATION DE SCENE 3D</p>
                 </div>
-                <div class="card-skill">
+                <div class="card-skill" data-scrolly="skillBottom">
                     <svg class="icon icon--stroke">
                         <use href="#icon-graphic-design"></use>
                     </svg>
@@ -132,19 +132,19 @@
             <h1>MES LOGICIELS MAITRISÉS</h1>
             <span class="bar"></span>
             <div class="logiciel-container">
-                <svg class="icon">
+                <svg class="icon" data-scrolly="opacity">
                     <use href="#icon-photoshop"></use>
                 </svg>
-                <svg class="icon">
+                <svg class="icon" data-scrolly="opacity">
                     <use href="#icon-illustrator"></use>
                 </svg>
-                <svg class="icon icon--stroke">
+                <svg class="icon icon--stroke" data-scrolly="opacity">
                     <use href="#icon-fl-studio"></use>
                 </svg>
-                <svg class="icon">
+                <svg class="icon" data-scrolly="opacity">
                     <use href="#icon-premiere"></use>
                 </svg>
-                <svg class="icon">
+                <svg class="icon" data-scrolly="opacity">
                     <use href="#icon-figma"></use>
                 </svg>
             </div>
@@ -156,31 +156,31 @@
             <h1>MES QUALITÉS PROFESSIONNELLES</h1>
             <span class="bar"></span>
             <div class="cards-skill">
-                <div class="card-skill">
+                <div class="card-skill" data-scrolly="skillTop">
                     <svg class="icon">
                         <use href="#icon-creation"></use>
                     </svg>
                     <p>CRÉATIF</p>
                 </div>
-                <div class="card-skill">
+                <div class="card-skill" data-scrolly="skillBottom">
                     <svg class="icon">
                         <use href="#icon-autonomie"></use>
                     </svg>
                     <p>AUTONOME</p>
                 </div>
-                <div class="card-skill org">
+                <div class="card-skill org" data-scrolly="skillTop">
                     <svg class="icon">
                         <use href="#icon-organisation"></use>
                     </svg>
                     <p>SENS DE L’ORGANISATION</p>
                 </div>
-                <div class="card-skill">
+                <div class="card-skill" data-scrolly="skillBottom">
                     <svg class="icon">
                         <use href="#icon-critique"></use>
                     </svg>
                     <p>OUVERT À LA CRITIQUE</p>
                 </div>
-                <div class="card-skill">
+                <div class="card-skill" data-scrolly="skillTop">
                     <svg class="icon">
                         <use href="#icon-adapt"></use>
                     </svg>
@@ -195,31 +195,31 @@
             <h1>MES PASSIONS</h1>
             <span class="bar"></span>
             <div class="cards-passions">
-                <div class="card-passion">
+                <div class="card-passion" data-scrolly="fromLeft">
                     <div class="cadre-img-bleu">
                         <img src="assets/images/Passion_jeuxvideo.jpg" alt="">
                     </div>
                     <h2>Jeux vidéo</h2>
                 </div>
-                <div class="card-passion">
+                <div class="card-passion" data-scrolly="fromRight">
                     <div class="cadre-img-bleu">
                         <img src="assets/images/Passion_music.jpg" alt="">
                     </div>
                     <h2>Musique</h2>
                 </div>
-                <div class="card-passion">
+                <div class="card-passion" data-scrolly="fromLeft">
                     <div class="cadre-img-bleu">
                         <img src="assets/images/Passion_fashion.jpg" alt="">
                     </div>
                     <h2>Fashion</h2>
                 </div>
-                <div class="card-passion">
+                <div class="card-passion" data-scrolly="fromRight">
                     <div class="cadre-img-bleu">
                         <img src="assets/images/Passion_artvisuel.jpg" alt="">
                     </div>
                     <h2>Art visuel</h2>
                 </div>
-                <div class="card-passion">
+                <div class="card-passion" data-scrolly="fromLeft">
                     <div class="cadre-img-bleu">
                         <img src="assets/images/Passion_photo.jpg" alt="">
                     </div>
@@ -231,8 +231,8 @@
 
     <section class="video" id="video">
         <div class="wrapper">
-            <h1>Apprenez plus à propos de moi</h1>
-            <div class="video" data-component="Youtube" data-video-id="x5mDeAD3Y24">
+            <h1 data-scrolly="video">Apprenez plus à propos de moi</h1>
+            <div class="video" data-component="Youtube" data-video-id="x5mDeAD3Y24" data-scrolly="video">
                 <div class="video__media js-youtube">
                     <img class="js-poster" src="assets/images/Passion_photo.jpg" alt="Spectacle de musique" />
                     <svg class="icon icon--xl">
