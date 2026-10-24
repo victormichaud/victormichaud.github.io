@@ -967,6 +967,11 @@ section {
     right: 18px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .hub .hub-left {
+    height: 0;
+  }
+}
 .hub .hub-left .video {
   width: 400px;
   margin-top: 20px;
@@ -1029,7 +1034,7 @@ section {
   position: relative;
 }
 .hub .profile-hub .cadre-img-blanc {
-  height: 45vh;
+  height: 43vh;
   width: 100%;
 }
 .hub .profile-hub p {
@@ -1061,6 +1066,7 @@ section {
 @media screen and (max-height: 840px) {
   .hub .profile-hub {
     gap: 5px;
+    transform: scale(0.85);
   }
 }
 
