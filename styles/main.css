@@ -856,14 +856,60 @@ section {
   opacity: 1;
 }
 
+.quatrecentquatre {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-white);
+}
+.quatrecentquatre section .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.quatrecentquatre section .wrapper .sourir {
+  font-size: 160px;
+}
+.quatrecentquatre section .wrapper .btn {
+  width: 16%;
+}
+
+.contact {
+  margin: 0;
+  text-align: center;
+  width: 100vw;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.contact .methode_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact .methode_contact .icon {
+  width: 50px;
+  height: 50px;
+}
+
 .body_hub {
   background-color: var(--color-bg-secondary);
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .hub {
   background-color: var(--color-bg-secondary);
   margin: 0;
   padding: 2px 0;
+  width: 100%;
+  height: 100%;
 }
 .hub .wrapper {
   display: flex;
@@ -880,8 +926,9 @@ section {
 .hub .hub-left {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: flex-start;
   justify-content: space-between;
+  height: 100vh;
 }
 .hub .hub-left .nav-hub ul {
   display: grid;
@@ -976,11 +1023,13 @@ section {
   align-items: end;
   gap: 15px;
   width: 50%;
+  height: 100vh;
   transform: scale(0.95);
   order: 2;
+  position: relative;
 }
 .hub .profile-hub .cadre-img-blanc {
-  height: 425px;
+  height: 45vh;
   width: 100%;
 }
 .hub .profile-hub p {
@@ -1009,6 +1058,11 @@ section {
     text-align: center;
   }
 }
+@media screen and (max-height: 840px) {
+  .hub .profile-hub {
+    gap: 5px;
+  }
+}
 
 .hero .wrapper {
   display: flex;
@@ -1035,6 +1089,9 @@ section {
   }
 }
 
+.qualites, .competences {
+  margin: 260px 0;
+}
 .qualites .wrapper, .competences .wrapper {
   text-align: center;
 }
@@ -1143,8 +1200,11 @@ section {
 .cta h2 {
   padding: 20px 0;
 }
-.cta .btn {
-  text-align: right;
+.cta .btn_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
 }
 
 .projets .wrapper h1 {
