@@ -501,12 +501,17 @@ header .wrapper {
   padding: 10px 0;
 }
 header .wrapper .logo {
-  width: 15%;
+  width: 10%;
   transform: scale(1) rotateZ(-1deg);
   transition: all 0.5s ease-in;
 }
 header .wrapper .logo:hover {
   transform: scale(1.05) rotateZ(3deg);
+}
+@media screen and (max-width: 1024px) {
+  header .wrapper .logo {
+    width: 20%;
+  }
 }
 header .wrapper .nav-header {
   display: flex;
@@ -646,13 +651,13 @@ footer {
   background-color: var(--color-bg-secondary);
   color: var(--color-white);
   text-align: center;
-  padding: 20px 0;
+  padding: 40px 0;
 }
 footer .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
+  gap: 50px;
 }
 @media screen and (max-width: 1024px) {
   footer .wrapper {
@@ -665,7 +670,7 @@ footer p {
 }
 footer .logo {
   display: block;
-  width: 15%;
+  width: 10%;
   transform: scale(1) rotateZ(-1deg);
   transition: all 0.5s ease-in;
 }
@@ -674,7 +679,7 @@ footer .logo:hover {
 }
 @media screen and (max-width: 1024px) {
   footer .logo {
-    width: 35%;
+    width: 20%;
   }
 }
 footer .nav-footer {
@@ -1037,6 +1042,12 @@ section {
   height: 43vh;
   width: 100%;
 }
+.hub .profile-hub .cadre-img-blanc img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
 .hub .profile-hub p {
   margin: 10px 0;
 }
@@ -1230,6 +1241,10 @@ section {
 }
 .projets .wrapper .cards-projets .card-projet img {
   border-bottom: 6px solid var(--color-primary);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
   height: 400px;
   width: 100%;
 }
