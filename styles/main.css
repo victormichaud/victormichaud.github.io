@@ -861,47 +861,6 @@ section {
   opacity: 1;
 }
 
-.quatrecentquatre {
-  background-color: var(--color-bg-secondary);
-  color: var(--color-white);
-}
-.quatrecentquatre section .wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.quatrecentquatre section .wrapper .sourir {
-  font-size: 160px;
-}
-.quatrecentquatre section .wrapper .btn {
-  width: 16%;
-}
-
-.contact {
-  margin: 0;
-  text-align: center;
-  width: 100vw;
-  height: 100%;
-  max-width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.contact .wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-}
-.contact .methode_contact {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.contact .methode_contact .icon {
-  width: 50px;
-  height: 50px;
-}
-
 .body_hub {
   background-color: var(--color-bg-secondary);
   height: 100%;
@@ -988,6 +947,7 @@ section {
 .hub .hub-left .video .thumbnail-video img {
   -o-object-fit: contain;
      object-fit: contain;
+  border: solid 2px var(--color-white);
 }
 .hub .hub-left .video .thumbnail-video p {
   position: absolute;
@@ -999,12 +959,12 @@ section {
 }
 .hub .hub-left .video .thumbnail-video::before {
   content: "";
-  background-color: black;
+  background-color: white;
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 2;
-  opacity: 30%;
+  opacity: 0;
   transition: all 0.2s ease-in;
 }
 .hub .hub-left .video .video-title {
@@ -1015,7 +975,7 @@ section {
   font-size: calc(var(--font-size-p) - 2);
 }
 .hub .hub-left .video:hover .thumbnail-video::before {
-  opacity: 50%;
+  opacity: 10%;
 }
 @media screen and (max-width: 1024px) {
   .hub .hub-left .video {
@@ -1324,6 +1284,66 @@ section {
        object-fit: cover;
     height: 300px;
   }
+}
+
+.quatrecentquatre {
+  background-color: var(--color-bg-secondary);
+  color: var(--color-white);
+}
+.quatrecentquatre section .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.quatrecentquatre section .wrapper .sourir {
+  font-size: 160px;
+}
+.quatrecentquatre section .wrapper .btn {
+  width: 16%;
+}
+
+.contact {
+  margin: 0;
+  text-align: center;
+  width: 100vw;
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.contact .methode_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact .methode_contact .icon {
+  width: 50px;
+  height: 50px;
+}
+
+.ai {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ai .icon {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  color: var(--color-primary);
+}
+.ai h1 {
+  margin: 40px 0;
+}
+.ai p {
+  margin: 10px 0;
 }
 
 /* ==========================================================================
