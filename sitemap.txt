@@ -2,4 +2,3 @@ https://victormichaud.github.io/
 https://victormichaud.github.io/apropos.html
 https://victormichaud.github.io/projets.html
 https://victormichaud.github.io/ai.html
-https://victormichaud.github.io/404.html
